@@ -1,0 +1,31 @@
+:root{
+    --cor1:rgb(148, 248, 148);
+    --cor2:rgb(77, 248, 77);
+    --cor3:rgb(9, 212, 9);
+    --cor4:rgb(5, 133, 5);
+    --cor5:rgb(2, 85, 2);
+}
+body{
+    /*mas utilizar este formato gera problema com a imagem que está no background*/
+    height:100vh; /*Utilizando isto, conseugimos utilizar 100% do body*/
+    background-repeat: no-repeat;
+    background-image: url(../imagens/img4.jpg);
+    background-size: 100%, 100%; /*fazendo isso, queremos utilizar 100% das medidas*/
+}
+.column{
+    border: 2px solid #0e0d0d;
+    margin: 2px;
+    width: 300px;
+    height: 300px;
+    background-color: var(--cor1);
+    display: inline-block;
+}
+.column#c1{
+    background-color: var(--cor3);
+}
+.column#c2{
+    background-image: linear-gradient(to bottom, rgb(2, 85, 2),rgb(77, 248, 77));/*aqui não consegui inserir as variáveis de cor CRTL + Espaço, foi manual*/
+}
+.column#c3{
+    background-image: url("../imagens/img4.jpg");/* .. significa que é para voltar dois ficheiros*/
+}
