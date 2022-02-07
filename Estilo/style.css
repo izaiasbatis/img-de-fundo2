@@ -12,6 +12,7 @@ body{
     background-repeat: no-repeat;
     background-image: url(../imagens/img4.jpg);
     background-size:cover; /*fazendo isso, a img adapta total com o vh da página*/        /*RECOMENDADO PARA TELA TODA*/
+    background-attachment: fixed;/*Com este complemento, quando você rodar a barra de rolagem, a imagem ficará estática e não sofrerá dano de recurso*/
 }
 .column{
     border: 2px solid #0e0d0d;
@@ -29,4 +30,30 @@ body{
 }
 .column#c3{
     background-image: url("../imagens/img4.jpg");/* .. significa que é para voltar dois ficheiros*/
+}
+header{
+width: 100%;
+display: flex;
+justify-content: center;
+
+}
+.titulo{
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: 600px;
+    border: solid black;
+    text-align: center;
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.texto{
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: 600px;
+    border: solid black;
+    text-align: center;
 }
