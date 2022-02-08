@@ -13,6 +13,7 @@ body{
     background-image: url(../imagens/img4.jpg);
     background-size:cover; /*fazendo isso, a img adapta total com o vh da página*/        /*RECOMENDADO PARA TELA TODA*/
     background-attachment: fixed;/*Com este complemento, quando você rodar a barra de rolagem, a imagem ficará estática e não sofrerá dano de recurso*/
+
 }
 .column{
     border: 2px solid #0e0d0d;
@@ -53,7 +54,12 @@ main{
 .texto{
     background-color: aliceblue;
     border-radius: 10px;
-    width: 600px;
+    width: 595px;
     border: solid black;
-    text-align: center;
+    text-align: justify;
+    padding: 5px;
+}
+.texto > p{
+    text-indent: 30px;
+    line-height: 2em;
 }
